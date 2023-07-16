@@ -818,6 +818,7 @@
         try {
             await onMessage({ from_name, from_email, message })
             this.reset();
+            window.alert('Mesage has been sent successfully.')
         } catch (error) {
             console.error('____________________Email failed to send:', error);
         }
