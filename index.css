@@ -530,71 +530,46 @@ footer p {
     color: #333333;
 }
 
-@media (max-width: 800px) {
-    #projects {
-        .card {
-            width: 100%;
-        }
-    }
 
-    .container {
-        padding: 0 20px;
-    }
+/* ... Existing styles ... */
 
-    header .header-container {
-        flex-direction: column;
-        gap: 10px;
-        justify-items: baseline;
-    }
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    /* ... Existing styles ... */
 
-    .logo {
-        margin-left: 20px;
-        min-width: 100%;
-        max-width: 100%;
-        justify-content: center;
-    }
-
-    header .container {
-        justify-content: center;
-    }
-
-    #expertise .elementor-container {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
-
-    #expertise .elementor-column {
-        border: 0px;
-        /* border-bottom: 3px solid #7a7a7a; */
-        width: 100%;
-    }
-
-    #achievements .achievement-container .elementor-container {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        min-width: 100%;
-        flex-wrap: wrap;
-    }
-
+    /* Adjust expertise and achievements sections */
+    #expertise .elementor-column,
     #achievements .elementor-column {
-        border: 0px;
-        /* border-bottom: 3px solid #7a7a7a; */
-        width: 100%;
+        padding: 15px;
+        border-left: 2px solid #189AB4; /* Add left border */
+    }
+}
+
+@media (max-width: 992px) {
+    /* ... Existing styles ... */
+}
+
+@media (max-width: 768px) {
+    /* ... Existing styles ... */
+
+    /* Adjust header and footer padding */
+    header,
+    footer {
+        padding: 10px;
     }
 
-    section#achievements .other-achievment {
-        width: 100%;
+    /* Adjust home section background */
+    #home {
+        background-size: cover;
     }
+}
 
-    section#achievements .other-achievment ul {
-        width: 98%;
-    }
+@media (max-width: 576px) {
+    /* ... Existing styles ... */
 
-    section#achievements .other-achievment li {
-        margin-right: 25px;
+    /* Adjust header and footer padding */
+    header,
+    footer {
+        padding: 5px;
     }
 }
