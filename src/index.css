@@ -133,7 +133,7 @@ section h2 {
 #home {
     height: 90vh;
     /* Set the home section to full viewport height */
-    background-image: url("./safi-resume-home-cover.jpg");
+    background-image: url("../assets/images/safi-resume-home-cover.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
