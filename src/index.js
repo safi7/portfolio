@@ -76,14 +76,12 @@ function displayCertificates() {
 
 
     let count = 0
-    const start_index = count % (certs.length - 1);
-    createCertElements(start_index)
-    count += 2;
+    createCertElements(count)
 
     setInterval(() => {
-        const start_index = count % (certs.length - 1);
-        count += 2;
-        createCertElements(start_index)
+        count = count >= certs.length - 3 ? 0 : count + 2;
+        console.log({ count })
+        createCertElements(count)
     }, 3 * 1000, 0);
 }
 
@@ -133,11 +131,11 @@ function fetchLinkedInCertificates() {
             source: 'linkedin',
             url: 'https://raw.githubusercontent.com/safi7/portfolio/master/assets/certificates/1674544439954.png'
         },
-        {
-            title: 'Advance your Node.js Skills',
-            source: 'linkedin',
-            url: 'https://raw.githubusercontent.com/safi7/portfolio/master/assets/certificates/1676131245738.jpg'
-        },
+        // {
+        //     title: 'Advance your Node.js Skills',
+        //     source: 'linkedin',
+        //     url: 'https://raw.githubusercontent.com/safi7/portfolio/master/assets/certificates/1676131245738.jpg'
+        // },
         {
             title: 'Advanced Express',
             source: 'linkedin',
@@ -154,15 +152,15 @@ function fetchLinkedInCertificates() {
             url: 'https://raw.githubusercontent.com/safi7/portfolio/master/assets/certificates/1675614139774.png'
         },
         {
-            title: 'Career Essentials in Software Dev by Microsoft & LinkedIn',
+            title: 'Career Essentials in Software by Microsoft & LinkedIn',
             source: 'microsoft',
             url: 'https://raw.githubusercontent.com/safi7/portfolio/master/assets/certificates/1673621205352.png'
         },
-        {
-            title: 'MERN Essential Training',
-            source: 'linkedin',
-            url: 'https://raw.githubusercontent.com/safi7/portfolio/master/assets/certificates/1676265915801.png'
-        },
+        // {
+        //     title: 'MERN Essential Training',
+        //     source: 'linkedin',
+        //     url: 'https://raw.githubusercontent.com/safi7/portfolio/master/assets/certificates/1676265915801.png'
+        // },
         {
             title: 'JSON Essential Training',
             source: 'linkedin',
@@ -375,7 +373,7 @@ function fetchLinkedInCertificates() {
             url: 'https://raw.githubusercontent.com/safi7/portfolio/master/assets/certificates/1676178115852.png'
         },
         {
-            title: 'MEAN Stack and MongoDB: Development Techniques',
+            title: 'MEAN Stack: Development Techniques',
             source: 'linkedin',
             url: 'https://raw.githubusercontent.com/safi7/portfolio/master/assets/certificates/1676978120787.png'
         },
@@ -540,7 +538,7 @@ function fetchLinkedInCertificates() {
         //     url: 'https://raw.githubusercontent.com/safi7/portfolio/master/assets/certificates/1674749812133.png'
         // },
         {
-            title: 'Programming Foundations: Beyond the Fundamentals',
+            title: 'Programming Foundations: Beyond Fundamentals',
             source: 'linkedin',
             url: 'https://raw.githubusercontent.com/safi7/portfolio/master/assets/certificates/1673619539945.png'
         },
