@@ -80,7 +80,6 @@ function displayCertificates() {
 
     setInterval(() => {
         count = count >= certs.length - 3 ? 0 : count + 2;
-        console.log({ count })
         createCertElements(count)
     }, 3 * 1000, 0);
 }
