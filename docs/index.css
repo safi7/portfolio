@@ -11,7 +11,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #E0F2F1;
+    background-color: #DCF4DC;
     color: #fff;
     width: 100%;
 }
@@ -38,12 +38,12 @@ h3 {
 
 /* Customize navigation */
 header {
-    background-color: #80CBC4;
+    background-color: #00928F;
     padding: 20px;
     position: sticky;
     top: 0;
     z-index: 999;
-    transition: #80CBC4 0.3s;
+    transition: #00928F 0.3s;
     box-sizing: border-box;
     min-width: 500px;
 
@@ -112,7 +112,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333333;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -530,46 +530,131 @@ footer p {
     color: #333333;
 }
 
+section#home{
+    background-color: #DCF4DC;
+    box-sizing: border-box;
+}
+section#expertise{
+    background-color: #DCF4DC;
+    box-sizing: border-box;
 
-/* ... Existing styles ... */
+}
+section#projects{
+    background-color: #DCF4DC;
+    box-sizing: border-box;
 
-/* Responsive Styles */
-@media (max-width: 1200px) {
-    /* ... Existing styles ... */
+}
+section#achievements{
+    background-color: #DCF4DC;;
+    box-sizing: border-box;
 
-    /* Adjust expertise and achievements sections */
-    #expertise .elementor-column,
-    #achievements .elementor-column {
-        padding: 15px;
-        border-left: 2px solid #189AB4; /* Add left border */
-    }
+}
+section#contact{
+    background-color:#DCF4DC;
+    box-sizing: border-box;
 }
 
-@media (max-width: 992px) {
-    /* ... Existing styles ... */
-}
-
-@media (max-width: 768px) {
-    /* ... Existing styles ... */
-
-    /* Adjust header and footer padding */
-    header,
-    footer {
-        padding: 10px;
+/* Add responsive styles for smaller screens (phones) */
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    body {
+        font-size: 16px; /* Adjust font size for readability */
+        min-width: 800px;
     }
 
-    /* Adjust home section background */
-    #home {
+    .container{
+        max-width: 800px;
+    }
+
+    /* Header */
+    /* header {
+        padding: 10px; /* Reduce padding for smaller header */
+
+    /* Navigation */
+    nav ul {
+        flex-direction: row; /* Stack navigation links vertically */
+        text-align: center; /* Center-align navigation links */
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin-right: 0; /* Remove right margin for list items */
+        margin-bottom: 10px; /* Add some spacing between list items */
+    } 
+
+    section#home {
+        height: 50vh;
+        /* Set the home section to full viewport height */
+        background-image: url("https://raw.githubusercontent.com/safi7/portfolio/master/assets/images/safi-resume-home-cover.jpg");
+        background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
+        max-width: 800px;
     }
-}
 
-@media (max-width: 576px) {
-    /* ... Existing styles ... */
+    #home .container p {
+        color: #333333;
+        padding: 20px;
+        font-size: 1.3rem;
+        font-weight: 700;
+        border-radius: 50px;
+        background-color: rgb(146, 182, 165, 0.7);
+    }
 
-    /* Adjust header and footer padding */
-    header,
-    footer {
-        padding: 5px;
+    section#expertise  div.elementor-container  {
+            display: flex;
+            flex-direction: column;
+            justify-items: flex-start;
+            border: 0px;
+            align-items: center;
+        }
+
+    section#expertise  div.elementor-column  {
+            border: 0px;
+            min-width: 700px;
+            max-width: 700px;
+        }
+
+    section#expertise   .hello-world-image img {
+            top: -45px;
+            margin-left: 30px;
+        }
+
+   div.card .caption {
+            height: 220px;
+        }
+        
+    section#achievements  div.elementor-container  {
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-start;
+        border: 0px;
+        align-items: center;
+    }
+
+    section#achievements  div.elementor-column  {
+        border: 0px;
+        min-width: 700px;
+        max-width: 700px;
+    }
+    section#achievements .certificates{
+        border: 0px;
+        min-width: 700px;
+        max-width: 700px;
+    } 
+
+    section#achievements .other-achievment{
+        border: 3px solid #80CBC4;
+        min-width: 700px;
+        max-width: 700px;
+    } 
+
+    section#achievements .other-achievment ul {
+        min-width: 600px;
+        max-width: 600px;
+    }
+
+    section#expertise div.elementor-container {
+        width: 700px;
     }
 }
