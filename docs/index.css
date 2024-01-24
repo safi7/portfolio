@@ -557,7 +557,7 @@ section#projects {
     box-sizing: border-box;
 }
 
-section#projects .container {
+section#projects .card-container {
     max-height: 1200px;
     overflow-y: auto;
     padding: 10px;
