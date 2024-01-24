@@ -24,7 +24,8 @@ h2 {
     text-align: center;
     letter-spacing: 3px;
     text-shadow: 2px 2px 0px #2d303a, -2px -2px 0px #2d303a, -2px 2px 0px #2d303a, 2px -2px 0px #2d303a;
-    color: #fff;;
+    color: #fff;
+    ;
 
 }
 
@@ -99,7 +100,7 @@ header .container {
     padding: 0;
 }
 
-.logo img{
+.logo img {
     padding-top: 5px;
 }
 
@@ -214,7 +215,7 @@ section h2 {
         flex-direction: column;
         gap: 5px;
         background-color: #E0F4F1;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     .caption span {
@@ -258,7 +259,7 @@ section h2 {
         border-right: 2px solid #80CBC4;
         padding: 15px 35px;
         word-wrap: break-word;
-     
+
     }
 
     .elementor-column:last-child {
@@ -363,8 +364,8 @@ section#achievements {
         max-width: 950px;
         color: #333333;
     }
-    
-    .certificates{
+
+    .certificates {
         border: 3px solid #80CBC4;
         border-top: 0px;
         text-align: center;
@@ -378,39 +379,41 @@ section#achievements {
     }
 
     .img-container {
-    max-width: 450px;
-    margin: 0 auto;
-    text-align: center;
-    width: max-content;
-    overflow: hidden;
-    box-sizing: border-box;
+        max-width: 450px;
+        margin: 0 auto;
+        text-align: center;
+        width: max-content;
+        overflow: hidden;
+        box-sizing: border-box;
     }
 
     .img-container img {
-    max-width: 100%;
-    height: auto;
-    object-fit:fill;
-    transition: opacity 0.5s ease-in-out; 
+        max-width: 100%;
+        height: auto;
+        object-fit: fill;
+        transition: opacity 0.5s ease-in-out;
     }
 
-   .img-container div.description{
-    box-sizing: border-box;
-    border-bottom-left-radius: 8px; 
-    border-bottom-right-radius: 8px; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    background-color: #E0F4F1;
-    width: 100%;
-    margin-top: -10px;
-    padding: 10px;
+    .img-container div.description {
+        box-sizing: border-box;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: #E0F4F1;
+        width: 100%;
+        margin-top: -10px;
+        padding: 10px;
     }
 
     .img-container p {
-    font-size: 1rem;
-    color: #333333;;
-    height: 100%;
+        font-size: 1rem;
+        color: #333333;
+        ;
+        height: 100%;
     }
 
-    .img-container  h5,.other-achievment h5{
+    .img-container h5,
+    .other-achievment h5 {
         padding: 10px;
         font-size: 1.4rem;
         font-weight: 700;
@@ -418,7 +421,7 @@ section#achievements {
         color: #333333;
     }
 
-    .other-achievment h5{
+    .other-achievment h5 {
         padding-top: 25px;
     }
 }
@@ -440,8 +443,8 @@ section#achievements {
     text-align: left;
 }
 
-section#contact .container{
-    max-width: 1050px;
+section#contact .container {
+    max-width: 1030px;
 }
 
 #contact ul {
@@ -538,39 +541,51 @@ footer p {
     color: #333333;
 }
 
-section#home{
+section#home {
     background-color: #DCF4DC;
     box-sizing: border-box;
 }
-section#expertise{
-    background-color: #DCF4DC;
-    box-sizing: border-box;
 
-}
-section#projects{
+section#expertise {
     background-color: #DCF4DC;
     box-sizing: border-box;
 
 }
-section#achievements{
-    background-color: #DCF4DC;;
+
+section#projects {
+    background-color: #DCF4DC;
+    box-sizing: border-box;
+}
+
+section#projects .container {
+    max-height: 1200px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+section#achievements {
+    background-color: #DCF4DC;
+    ;
     box-sizing: border-box;
 
 }
-section#contact{
-    background-color:#DCF4DC;
+
+section#contact {
+    background-color: #DCF4DC;
     box-sizing: border-box;
 }
 
 /* Add responsive styles for smaller screens (phones) */
 @media screen and (max-width: 768px) {
+
     /* Adjustments for smaller screens */
     body {
-        font-size: 16px; /* Adjust font size for readability */
+        font-size: 16px;
+        /* Adjust font size for readability */
         min-width: 800px;
     }
 
-    .container{
+    .container {
         max-width: 800px;
     }
 
@@ -580,15 +595,19 @@ section#contact{
 
     /* Navigation */
     nav ul {
-        flex-direction: row; /* Stack navigation links vertically */
-        text-align: center; /* Center-align navigation links */
+        flex-direction: row;
+        /* Stack navigation links vertically */
+        text-align: center;
+        /* Center-align navigation links */
         gap: 10px;
     }
 
     nav ul li {
-        margin-right: 0; /* Remove right margin for list items */
-        margin-bottom: 10px; /* Add some spacing between list items */
-    } 
+        margin-right: 0;
+        /* Remove right margin for list items */
+        margin-bottom: 10px;
+        /* Add some spacing between list items */
+    }
 
     section#home {
         height: 50vh;
@@ -609,30 +628,7 @@ section#contact{
         background-color: rgb(146, 182, 165, 0.7);
     }
 
-    section#expertise  div.elementor-container  {
-            display: flex;
-            flex-direction: column;
-            justify-items: flex-start;
-            border: 0px;
-            align-items: center;
-        }
-
-    section#expertise  div.elementor-column  {
-            border: 0px;
-            min-width: 700px;
-            max-width: 700px;
-        }
-
-    section#expertise   .hello-world-image img {
-            top: -45px;
-            margin-left: 30px;
-        }
-
-   div.card .caption {
-            height: 220px;
-        }
-        
-    section#achievements  div.elementor-container  {
+    section#expertise div.elementor-container {
         display: flex;
         flex-direction: column;
         justify-items: flex-start;
@@ -640,22 +636,46 @@ section#contact{
         align-items: center;
     }
 
-    section#achievements  div.elementor-column  {
+    section#expertise div.elementor-column {
         border: 0px;
         min-width: 700px;
         max-width: 700px;
     }
-    section#achievements .certificates{
+
+    section#expertise .hello-world-image img {
+        top: -45px;
+        margin-left: 30px;
+    }
+
+    div.card .caption {
+        height: 220px;
+    }
+
+    section#achievements div.elementor-container {
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-start;
+        border: 0px;
+        align-items: center;
+    }
+
+    section#achievements div.elementor-column {
         border: 0px;
         min-width: 700px;
         max-width: 700px;
-    } 
+    }
 
-    section#achievements .other-achievment{
+    section#achievements .certificates {
+        border: 0px;
+        min-width: 700px;
+        max-width: 700px;
+    }
+
+    section#achievements .other-achievment {
         border: 3px solid #80CBC4;
         min-width: 700px;
         max-width: 700px;
-    } 
+    }
 
     section#achievements .other-achievment ul {
         min-width: 600px;
