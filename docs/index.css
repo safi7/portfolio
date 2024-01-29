@@ -164,7 +164,7 @@ section h2 {
     font-size: 1.6rem;
     font-weight: 700;
     border-radius: 100px;
-    background-color: rgb(146, 182, 165, 0.2);
+    /* background-color: rgb(146, 182, 165, 0.2); */
 }
 
 #home .container h1 {
